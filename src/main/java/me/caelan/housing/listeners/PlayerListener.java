@@ -1,8 +1,8 @@
-package me.tavius.housing.listeners;
+package me.caelan.housing.listeners;
 
-import me.tavius.housing.Housing;
-import me.tavius.housing.managers.LocationManager;
-import me.tavius.housing.managers.PlayerManager;
+import me.caelan.housing.Housing;
+import me.caelan.housing.managers.LocationManager;
+import me.caelan.housing.managers.PlayerManager;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -65,6 +65,12 @@ public class PlayerListener implements Listener {
     }
 
     @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        Player player = event.getPlayer();
+        playerManager.clearInventory(player);
+    }
+
+    @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
         playerManager.handleDeath(player);
@@ -75,12 +81,6 @@ public class PlayerListener implements Listener {
         Player player = event.getPlayer();
         playerManager.clearInventory(player);
         playerManager.handleFall(player);
-    }
-
-    @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event) {
-        Player player = event.getPlayer();
-        playerManager.clearInventory(player);
     }
 }
 

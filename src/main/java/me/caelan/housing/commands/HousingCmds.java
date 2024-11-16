@@ -1,6 +1,6 @@
-package me.tavius.housing.commands;
+package me.caelan.housing.commands;
 
-import me.tavius.housing.Housing;
+import me.caelan.housing.Housing;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import revxrsal.commands.annotation.Command;

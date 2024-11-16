@@ -1,9 +1,9 @@
-package me.tavius.housing;
+package me.caelan.housing;
 
-import me.tavius.housing.commands.HousingCmds;
-import me.tavius.housing.listeners.PlayerListener;
-import me.tavius.housing.managers.LocationManager;
-import me.tavius.housing.managers.PlayerManager;
+import me.caelan.housing.commands.HousingCmds;
+import me.caelan.housing.listeners.PlayerListener;
+import me.caelan.housing.managers.LocationManager;
+import me.caelan.housing.managers.PlayerManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import revxrsal.commands.bukkit.BukkitCommandHandler;
 

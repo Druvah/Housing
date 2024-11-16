@@ -1,6 +1,6 @@
-package me.tavius.housing.managers;
+package me.caelan.housing.managers;
 
-import me.tavius.housing.Housing;
+import me.caelan.housing.Housing;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

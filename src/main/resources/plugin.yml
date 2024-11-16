@@ -1,4 +1,4 @@
 name: Housing
 version: '1.0'
-main: me.tavius.housing.Housing
-api-version: '1.19'
+main: me.caelan.housing.Housing
+api-version: '1.13'

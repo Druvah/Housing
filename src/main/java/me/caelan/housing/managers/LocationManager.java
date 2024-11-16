@@ -1,6 +1,6 @@
-package me.tavius.housing.managers;
+package me.caelan.housing.managers;
 
-import me.tavius.housing.Housing;
+import me.caelan.housing.Housing;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -27,10 +27,6 @@ public class LocationManager {
     public void setBridgeLocation(String name, Location location) {
         bridgeLocations.put(name, location);
         saveLocation("bridge.locations." + name, location);
-    }
-
-    public Location getSpawnLocation(String name) {
-        return spawnLocations.get(name);
     }
 
     public Location getBridgeLocation(String name) {
